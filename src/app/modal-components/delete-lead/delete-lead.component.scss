@@ -1,0 +1,22 @@
+.delete_lead_form {
+    .dialog-header {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        font-size: 20;
+        padding: 10px;
+    }
+
+    .action-button-wrapper {
+        padding-top: 30px;
+        align-items: center;
+        padding-left: 35%;
+
+        .delete_lead_btn {
+            background-color: red;
+        }
+    }
+}

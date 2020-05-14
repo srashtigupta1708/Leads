@@ -1,0 +1,13 @@
+<form class="update_lead_form">
+    <div class="dialog-header">Mark Communication</div>
+
+    <div class="form-field">
+        <label>Communication</label>
+        <textarea class="comm-text-area" name="communication" [(ngModel)]="lead.communication"></textarea>
+    </div>
+
+    <div class="action-button-wrapper">
+        <button class="btn btn-cancel" (click)="cancelDialog()">Close</button>
+        <button class="btn update_lead_btn" (click)="markUpdate()">Save</button>
+    </div>
+</form>

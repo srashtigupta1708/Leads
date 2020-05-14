@@ -1,0 +1,11 @@
+<td class="name-column">{{ lead?.first_name + ' ' + lead?.last_name }}</td>
+<td class="email-column">{{ lead?.email }}</td>
+<td class="mobile-column">{{ lead?.mobile }}</td>
+<td class="location-type-column">{{ lead?.location_type }}</td>
+<td class="location-string-column">{{ lead?.location_string }}</td>
+<td class="action-column">
+    <div>
+        <button class="btn update_lead_modal_btn" (click)="markUpdate()">Mark Update</button>
+        <button class="btn delete_lead_modal_btn" (click)="deleteLead()">Delete</button>
+    </div>
+</td>

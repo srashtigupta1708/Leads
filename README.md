@@ -1,21 +1,27 @@
-# cj-app
-Angular 2 SPA
+# LeadsApp
 
-IMPORTANT NOTES (In case Backend Service API Integration is required):
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
-    1. The backend endpoint host url is mentioned in environment.ts as well as environment.prod.ts. The property name is "apiUrl". An example is mentioned in "app.component.ts".
-    2. PLEASE USE THIS PROPERTY ("apiUrl") WHEN YOU ARE TRYING TO CALL A BACKEND API. ALSO DON'T CHANGE THIS PROPERTY ELSE THE APP WILL NOT BUILD PROPERLY AND YOUR SUBMISSION WILL NOT BE SCORED. 
-    3. Make sure that all the properties mentioned in environment.ts are also mentioned in environment.prod.ts for the app to build properly. 
+## Development server
 
-PROJECT BUILD STEPS(Make sure that your project is getting built successfully):
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-    Pre-requisites:
-    1. Install http-server module (https://www.npmjs.com/package/http-server).
-    2. Install node, npm, angular-cli (1.0.0-beta.30) for angular 2
+## Code scaffolding
 
-    Steps:
-    1. Go to the project root directory.
-    2. Run the following commands in the terminal/command line to build the app:
-            - npm install
-            - ng build --prod
-    3. Please make sure that your project is built successfully.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

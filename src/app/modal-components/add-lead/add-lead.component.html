@@ -1,0 +1,37 @@
+<form class="add_lead_form"  #newLeadForm="ngForm"> 
+    <div class="dialog-header">Add Lead</div>
+    <div class="lead-form-row">
+        <div class="column">
+            <div class="form-field">
+                <label class="required">First Name</label>
+                <input name="first_name" type="text" [(ngModel)]="lead.first_name" tabindex=1 required>
+            </div>
+            <div class="form-field">
+                <label class="required">Email Address</label>
+                <input name="email" type="text" [(ngModel)]="lead.email" tabindex=3 required>
+            </div>
+            <div class="form-field">
+                <label class="required">Location Type</label>
+                <app-loc-type-selector name="location_type_comp" tabindex=5 [isRequired]="true" [(ngModel)]="lead.location_type"></app-loc-type-selector>
+            </div>
+        </div>
+        <div class="column">
+            <div class="form-field">
+                <label class="required">Last Name</label>
+                <input  name="last_name" type="text" [(ngModel)]="lead.last_name" tabindex=2 required>
+            </div>
+            <div class="form-field">
+                <label class="required">Mobile</label>
+                <input name="mobile" type="text" [(ngModel)]="lead.mobile" tabindex=4 required>
+            </div>
+            <div class="form-field">
+                <label class="required">Location string</label>
+                <input name="location_string" type="text" [(ngModel)]="lead.location_string" tabindex=5 required>
+            </div>
+        </div>
+    </div>
+    <div class="action-button-wrapper">
+        <button class="btn btn-cancel" (click)="cancelDialog()">Close</button>
+        <button class="btn add_lead_btn" [disabled]="!newLeadForm.form.valid" (click)="closeDialog(lead)">Save</button>
+    </div>
+</form>

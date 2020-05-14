@@ -1,0 +1,21 @@
+<div class="dashboard-container">
+    <div>
+        <button class="btn add_lead_modal_btn" (click)="addNewLead()">Add Lead</button>
+    </div>
+
+    <div>
+        <table class="leads_table">
+            <tr>
+                <th class="name-column">Name</th>
+                <th class="email-column">Email</th>
+                <th class="mobile-column">Mobile Num</th>
+                <th class="location-type-column">Location Type</th>
+                <th class="location-string-column">Location String</th>
+                <th class="action-column">Action</th>
+            </tr>
+            <tr *ngFor="let lead of leads">
+                <app-lead-row [lead]="lead" (commUpdated)="getLeads()" (deleted)="getLeads()"></app-lead-row>
+            </tr>
+        </table>
+    </div>
+</div>

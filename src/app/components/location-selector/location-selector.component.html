@@ -1,0 +1,4 @@
+<select class="location-selector" name="location_type" [(ngModel)]="selectedLocationType" 
+    (ngModelChange)="writeValue($event)"> 
+    <option *ngFor="let location of locationTypes" [value]="location">{{location}}</option> 
+</select> 

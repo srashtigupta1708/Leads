@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+}
+
+.toolbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 30;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
